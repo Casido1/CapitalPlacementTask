@@ -1,4 +1,4 @@
-﻿namespace Exercise.Models.DTOs
+﻿namespace CapitalPlacementTask.API.Models.DTOs
 {
     public class CreateDto
     {

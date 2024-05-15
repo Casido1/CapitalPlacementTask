@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Exercise.Models.Entities
+namespace CapitalPlacementTask.API.Models.Entities
 {
     public class ProgramInfo
     {

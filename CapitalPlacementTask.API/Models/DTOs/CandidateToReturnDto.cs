@@ -1,6 +1,6 @@
-﻿using Exercise.Models.Entities;
+﻿using CapitalPlacementTask.API.Models.Entities;
 
-namespace Exercise.Models.DTOs
+namespace CapitalPlacementTask.API.Models.DTOs
 {
     public class CandidateToReturnDto : PersonalInformation
     {

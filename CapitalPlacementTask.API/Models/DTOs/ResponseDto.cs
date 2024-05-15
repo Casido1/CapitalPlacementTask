@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Exercise.Models.DTOs
+namespace CapitalPlacementTask.API.Models.DTOs
 {
     public class ResponseDto<T>
     {
