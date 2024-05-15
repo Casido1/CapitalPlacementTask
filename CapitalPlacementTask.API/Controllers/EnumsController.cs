@@ -7,7 +7,7 @@ namespace CapitalPlacementTask.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EnumController : ControllerBase
+    public class EnumsController : ControllerBase
     {
         [HttpGet("genders")]
         public IActionResult GetGenders()

@@ -1,6 +1,161 @@
 @CapitalPlacementTask.API_HostAddress = http://localhost:5054
 
-GET {{CapitalPlacementTask.API_HostAddress}}/weatherforecast/
+POST {{CapitalPlacementTask.API_HostAddress}}/api/Candidates
+Content-Type: application/json
+
+{
+  "firstName": "sam",
+  "lastName": "james",
+  "email": "sam.james@gmail.com",
+  "phoneNumber": "08567840336",
+  "nationality": "Canadian",
+  "currentResidence": "Canada",
+  "idNumber": "4457",
+  "dateOfBirth": "1980-05-14T13:28:28.248Z",
+  "gender": "Male",
+  "candidateId": "b1f7bb85-adcd-489e-a569-087e254c59d2",
+  "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+  "answers": [
+    {
+      "questionId": "3cf573e7-37d1-4588-b448-7604e2018bdf",
+      "text": "I am amazing"
+    }
+  ]
+}
+
+###
+
+POST {{CapitalPlacementTask.API_HostAddress}}/api/Candidates
+Content-Type: application/json
+
+{
+  "firstName": "esther",
+  "lastName": "michael",
+  "email": "esther.michael@gmail.com",
+  "phoneNumber": "08567840336",
+  "nationality": "Nigerian",
+  "currentResidence": "Nigeria",
+  "idNumber": "0878",
+  "dateOfBirth": "1995-05-14T13:28:28.248Z",
+  "gender": "Female",
+  "candidateId": "c3c49376-0bc6-4e3e-8434-631dd5c371d9",
+  "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+  "answers": [
+    {
+      "questionId": "3cf573e7-37d1-4588-b448-7604e2018bdf",
+      "text": "I am amazing"
+    }
+  ]
+}
+
+###
+
+POST {{CapitalPlacementTask.API_HostAddress}}/api/Candidates
+Content-Type: application/json
+
+{
+  "firstName": "john",
+  "lastName": "ushie",
+  "email": "john.ushie@gmail.com",
+  "phoneNumber": "08567840336",
+  "nationality": "Nigerian",
+  "currentResidence": "Nigeria",
+  "idNumber": "7897",
+  "dateOfBirth": "1990-05-14T13:28:28.248Z",
+  "gender": "Male",
+  "candidateId": "6ac954b0-af9b-49e9-abc8-113ee557f67e",
+  "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+  "answers": [
+    {
+      "questionId": "3cf573e7-37d1-4588-b448-7604e2018bdf",
+      "text": "I am amazing"
+    }
+  ]
+}
+
+###
+
+DELETE {{CapitalPlacementTask.API_HostAddress}}/api/Candidates/6ac954b0-af9b-49e9-abc8-113ee557f67e
 Accept: application/json
 
 ###
+      
+DELETE {{CapitalPlacementTask.API_HostAddress}}/api/Candidates/c3c49376-0bc6-4e3e-8434-631dd5c371d9
+Accept: application/json
+
+###
+
+POST {{CapitalPlacementTask.API_HostAddress}}/api/Programs
+Content-Type: application/json
+
+{
+  "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+  "title": "Tech summit",
+  "description": "Tech summit",
+  "employer": {
+    "firstName": "kelvin",
+    "lastName": "sam",
+    "email": "kelvin.sam@gmail.com",
+    "phoneNumber": "08136964004",
+    "nationality": "Nigerian",
+    "currentResidence": "Nigeria",
+    "idNumber": "9587",
+    "dateOfBirth": "1985-06-13T09:44:01.018Z",
+    "gender": "Male",
+    "employerId": "733511b9-7a3a-48b3-96d6-297862ee10d6",
+    "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593"
+  },
+  "questions": [
+    {
+      "questionId": "3cf573e7-37d1-4588-b448-7604e2018bdf",
+      "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+      "questionType": "Paragraph",
+      "text": "Tell me about yourself",
+      "choices": [
+      ]
+    }
+  ]
+}
+
+###
+
+PUT {{CapitalPlacementTask.API_HostAddress}}/api/Programs
+Content-Type: application/json
+
+{
+  "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+  "title": "Tech summit",
+  "description": "A summit for people who want to get into Tech",
+  "employer": {
+    "firstName": "kelvin",
+    "lastName": "sam",
+    "email": "kelvin.sam@gmail.com",
+    "phoneNumber": "98647045725",
+    "nationality": "Nigerian",
+    "currentResidence": "Nigeria",
+    "idNumber": "9587",
+    "dateOfBirth": "1985-06-13T09:44:01.018Z",
+    "gender": "Male",
+    "employerId": "733511b9-7a3a-48b3-96d6-297862ee10d6",
+    "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593"
+  },
+  "questions": [
+    {
+      "questionId": "3cf573e7-37d1-4588-b448-7604e2018bdf",
+      "programInfoId": "b76e3b9d-dbb0-4393-963a-5cd05257a593",
+      "questionType": "Paragraph",
+      "text": "Tell me about yourself",
+      "choices": [
+      ]
+    }
+  ]
+}
+
+###
+GET {{CapitalPlacementTask.API_HostAddress}}/api/Programs/b76e3b9d-dbb0-4393-963a-5cd05257a593
+Accept: application/json
+
+###
+
+DELETE {{CapitalPlacementTask.API_HostAddress}}/api/Programs/b76e3b9d-dbb0-4393-963a-5cd05257a593
+Accept: application/json

@@ -6,11 +6,11 @@ namespace CapitalPlacementTask.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProgramController : ControllerBase
+    public class ProgramsController : ControllerBase
     {
         private readonly IProgramService _programService;
 
-        public ProgramController(IProgramService programService)
+        public ProgramsController(IProgramService programService)
         {
             _programService = programService;
         }
