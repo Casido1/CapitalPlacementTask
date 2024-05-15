@@ -1,4 +1,8 @@
 using CapitalPlacementTask.API.Data;
+using CapitalPlacementTask.API.Data.Repository.Implementation;
+using CapitalPlacementTask.API.Data.Repository.Interface;
+using CapitalPlacementTask.API.Services.Implementation;
+using CapitalPlacementTask.API.Services.Interface;
 using Microsoft.Azure.Cosmos;
 using Microsoft.EntityFrameworkCore;
 
