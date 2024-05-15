@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CapitalPlacementTask.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1607a2e11554a2d074021d2180970cf627c61ddc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CapitalPlacementTask.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CapitalPlacementTask.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
